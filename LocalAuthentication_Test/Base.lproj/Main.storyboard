@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalAuthentication_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用TouchID/FaceID驗證登入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShK-e0-UH9">
+                                <rect key="frame" x="0.0" y="321.5" width="375" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="驗證方式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PT-Xu-LyD">
+                                <rect key="frame" x="0.0" y="84" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlM-Xo-SAa">
+                                <rect key="frame" x="175" y="355.5" width="200" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.90588235289999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="驗證結果:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SM-2x-Czr">
+                                <rect key="frame" x="0.0" y="355.5" width="175" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="Bg6-WT-DOg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2SM-2x-Czr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0N1-to-OvY"/>
+                            <constraint firstItem="VlM-Xo-SAa" firstAttribute="height" secondItem="2SM-2x-Czr" secondAttribute="height" id="1cp-ek-ii7"/>
+                            <constraint firstItem="VlM-Xo-SAa" firstAttribute="top" secondItem="ShK-e0-UH9" secondAttribute="bottom" constant="10" id="6Ax-Nv-aMV"/>
+                            <constraint firstItem="VlM-Xo-SAa" firstAttribute="leading" secondItem="2SM-2x-Czr" secondAttribute="trailing" id="7yl-G6-4ag"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VlM-Xo-SAa" secondAttribute="trailing" id="87Y-cw-8dK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7PT-Xu-LyD" secondAttribute="trailing" id="8sE-x0-REF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ShK-e0-UH9" secondAttribute="trailing" id="9U8-0W-FUa"/>
+                            <constraint firstItem="ShK-e0-UH9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IWS-gM-MdB"/>
+                            <constraint firstItem="ShK-e0-UH9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JCa-ma-Pd4"/>
+                            <constraint firstItem="7PT-Xu-LyD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wcd-7s-Kz0"/>
+                            <constraint firstItem="7PT-Xu-LyD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="dkS-fh-cRK"/>
+                            <constraint firstItem="ShK-e0-UH9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iXE-Kt-i3L"/>
+                            <constraint firstItem="7PT-Xu-LyD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p2A-m7-kUR"/>
+                            <constraint firstItem="2SM-2x-Czr" firstAttribute="top" secondItem="ShK-e0-UH9" secondAttribute="bottom" constant="10" id="ume-qb-qqg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="authResultLabel" destination="VlM-Xo-SAa" id="zfz-wL-FM4"/>
+                        <outlet property="stateLabel" destination="7PT-Xu-LyD" id="IyU-Aq-c57"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="i9y-nt-hHZ">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="FDb-cZ-c5w" customClass="HomeViewController" customModule="LocalAuthentication_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pTo-Qp-rNc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3x-zc-pK4">
+                                <rect key="frame" x="0.0" y="294" width="375" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n3x-zc-pK4" firstAttribute="leading" secondItem="zJC-3d-RZb" secondAttribute="leading" id="VG9-rx-GNe"/>
+                            <constraint firstItem="zJC-3d-RZb" firstAttribute="trailing" secondItem="n3x-zc-pK4" secondAttribute="trailing" id="faX-fi-hPA"/>
+                            <constraint firstItem="n3x-zc-pK4" firstAttribute="centerX" secondItem="pTo-Qp-rNc" secondAttribute="centerX" id="jX9-vk-mZt"/>
+                            <constraint firstItem="n3x-zc-pK4" firstAttribute="centerY" secondItem="pTo-Qp-rNc" secondAttribute="centerY" id="pBF-U0-4P1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zJC-3d-RZb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="161-tN-BC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="27"/>
+        </scene>
+    </scenes>
+</document>
